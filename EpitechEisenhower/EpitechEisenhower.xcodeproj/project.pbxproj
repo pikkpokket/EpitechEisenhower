@@ -99,13 +99,10 @@
 		5C14D10D20597EC200169DBE /* EpitechEisenhower */ = {
 			isa = PBXGroup;
 			children = (
-				5C14D10E20597EC200169DBE /* AppDelegate.swift */,
-				5C14D11020597EC200169DBE /* ViewController.swift */,
-				5C14D11220597EC200169DBE /* Main.storyboard */,
-				5C14D11820597EC200169DBE /* Assets.xcassets */,
-				5C14D11A20597EC200169DBE /* LaunchScreen.storyboard */,
-				5C14D11D20597EC200169DBE /* Info.plist */,
-				5C14D11520597EC200169DBE /* EpitechEisenhower.xcdatamodeld */,
+				5C14D13F20598AD000169DBE /* Models */,
+				5C14D14020598AD900169DBE /* Views */,
+				5C14D14120598ADF00169DBE /* Controllers */,
+				5C14D14220598B1400169DBE /* Supporting Files */,
 			);
 			path = EpitechEisenhower;
 			sourceTree = "<group>";
@@ -126,6 +123,41 @@
 				5C14D13320597EC300169DBE /* Info.plist */,
 			);
 			path = EpitechEisenhowerUITests;
+			sourceTree = "<group>";
+		};
+		5C14D13F20598AD000169DBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C14D14020598AD900169DBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C14D11220597EC200169DBE /* Main.storyboard */,
+				5C14D11A20597EC200169DBE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5C14D14120598ADF00169DBE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C14D11020597EC200169DBE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5C14D14220598B1400169DBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C14D11520597EC200169DBE /* EpitechEisenhower.xcdatamodeld */,
+				5C14D10E20597EC200169DBE /* AppDelegate.swift */,
+				5C14D11820597EC200169DBE /* Assets.xcassets */,
+				5C14D11D20597EC200169DBE /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = EpitechEisenhower/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EpitechEisenhower/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EpitechProject.EpitechEisenhower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,7 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = EpitechEisenhower/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EpitechEisenhower/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EpitechProject.EpitechEisenhower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
