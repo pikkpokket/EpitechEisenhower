@@ -10,4 +10,11 @@ import Foundation
 struct User {
     var email = ""
     var password = ""
+    var detail = ""
+    
+    init(email: String, password: String, detail: String = "") {
+        self.email = email
+        self.password = password
+        self.detail = detail
+    }
 }

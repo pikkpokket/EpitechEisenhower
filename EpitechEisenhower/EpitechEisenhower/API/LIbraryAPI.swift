@@ -23,9 +23,18 @@ final class LibraryAPI {
         httpClient.login(email: user.email, password: user.password)
     }
     
+    public func loginWithFacebook(token: Token) {
+        httpClient.loginWithFacebook(token: token)
+    }
+    
+    //    MARK: - Déconnexion
+    public func logout() {
+        httpClient.logout()
+    }
+    
     //    MARK: - Fonctions liées à l'utilisateur
-    public func updateUser(user: User) {
-        httpClient.updateUserInformation()
+    public func updateUser(user: BackendlessUser) {
+        httpClient.updateUserInformation(user: user)
     }
     
     public func addTask(newTask: Task) {
@@ -34,6 +43,10 @@ final class LibraryAPI {
     
     public func updateTask(updateTask: Task) {
         httpClient.updateTask(updateTask: updateTask)
+    }
+    
+    public func getTask() {
+        httpClient.getTask()
     }
     
 }

@@ -7,7 +7,20 @@
 		<key>EpitechEisenhower.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>11</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0F22E1AA1E8407D1004B722A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C457B55206B963F00040C3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

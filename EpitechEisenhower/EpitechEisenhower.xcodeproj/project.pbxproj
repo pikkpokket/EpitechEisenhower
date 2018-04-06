@@ -17,8 +17,30 @@
 		5C14D154205D292000169DBE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14D153205D292000169DBE /* HTTPClient.swift */; };
 		5C14D156205D2AB200169DBE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14D155205D2AB200169DBE /* User.swift */; };
 		5C14D159205D52C400169DBE /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14D158205D52C400169DBE /* NotificationExtension.swift */; };
-		F042F81FF281BC1586DCAADE /* libPods-EpitechEisenhower.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA6E1E7EA0ACD9BD56F8C47 /* libPods-EpitechEisenhower.a */; };
+		5C14D15B2066E42200169DBE /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14D15A2066E42200169DBE /* Token.swift */; };
+		5C14D15D2066FB7B00169DBE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14D15C2066FB7B00169DBE /* LoginView.swift */; };
+		5C457B3E2067B2B800040C3E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C457B3D2067B2B800040C3E /* ColorExtension.swift */; };
+		5C457B41206A712500040C3E /* FACEBOLF.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 5C457B40206A712400040C3E /* FACEBOLF.OTF */; };
+		5C457B43206A85A800040C3E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C457B42206A85A800040C3E /* Login.swift */; };
+		5C457B59206B964000040C3E /* EpitechEisenhowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C457B58206B964000040C3E /* EpitechEisenhowerTests.swift */; };
+		5C78CAD3206E5CFE007C753D /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78CAD2206E5CFE007C753D /* TaskView.swift */; };
+		5C78CAD5206E5D9C007C753D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78CAD4206E5D9C007C753D /* HomeViewController.swift */; };
+		5C78CAD7206F91B4007C753D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78CAD6206F91B4007C753D /* HomeTableViewCell.swift */; };
+		5C78CADA2072F475007C753D /* Task2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78CAD92072F475007C753D /* Task2View.swift */; };
+		5CF47B1D207746C0003E430B /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF47B1C207746C0003E430B /* ProfilViewController.swift */; };
+		5CF47B1F207771CA003E430B /* NSNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF47B1E207771CA003E430B /* NSNotificationExtension.swift */; };
+		CDA2FBEF74305DA34DFF26DE /* Pods_EpitechEisenhower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8506B52574AD9FCB9F0C6A27 /* Pods_EpitechEisenhower.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C457B5B206B964000040C3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F22E1A31E8407D1004B722A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F22E1AA1E8407D1004B722A;
+			remoteInfo = EpitechEisenhower;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0F22E1AB1E8407D1004B722A /* EpitechEisenhower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpitechEisenhower.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,8 +56,22 @@
 		5C14D153205D292000169DBE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		5C14D155205D2AB200169DBE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5C14D158205D52C400169DBE /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+		5C14D15A2066E42200169DBE /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		5C14D15C2066FB7B00169DBE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5C457B3D2067B2B800040C3E /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		5C457B40206A712400040C3E /* FACEBOLF.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FACEBOLF.OTF; sourceTree = "<group>"; };
+		5C457B42206A85A800040C3E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		5C457B56206B963F00040C3E /* EpitechEisenhowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpitechEisenhowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C457B58206B964000040C3E /* EpitechEisenhowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpitechEisenhowerTests.swift; sourceTree = "<group>"; };
+		5C457B5A206B964000040C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C78CAD2206E5CFE007C753D /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		5C78CAD4206E5D9C007C753D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5C78CAD6206F91B4007C753D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		5C78CAD92072F475007C753D /* Task2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task2View.swift; sourceTree = "<group>"; };
+		5CF47B1C207746C0003E430B /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
+		5CF47B1E207771CA003E430B /* NSNotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationExtension.swift; sourceTree = "<group>"; };
+		8506B52574AD9FCB9F0C6A27 /* Pods_EpitechEisenhower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpitechEisenhower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AF977C082B5FE4EB9C6F9D /* Pods-EpitechEisenhower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpitechEisenhower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpitechEisenhower/Pods-EpitechEisenhower.debug.xcconfig"; sourceTree = "<group>"; };
-		9EA6E1E7EA0ACD9BD56F8C47 /* libPods-EpitechEisenhower.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EpitechEisenhower.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +79,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F042F81FF281BC1586DCAADE /* libPods-EpitechEisenhower.a in Frameworks */,
+				CDA2FBEF74305DA34DFF26DE /* Pods_EpitechEisenhower.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C457B53206B963F00040C3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				0F22E1AD1E8407D1004B722A /* EpitechEisenhower */,
+				5C457B57206B964000040C3E /* EpitechEisenhowerTests */,
 				0F22E1AC1E8407D1004B722A /* Products */,
 				77EF8F30CE2D8F6B084BC1AE /* Pods */,
 				FA6ED154A0D21502920BB109 /* Frameworks */,
@@ -64,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				0F22E1AB1E8407D1004B722A /* EpitechEisenhower.app */,
+				5C457B56206B963F00040C3E /* EpitechEisenhowerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +131,9 @@
 			children = (
 				5C14D14D205D286A00169DBE /* Task.swift */,
 				5C14D155205D2AB200169DBE /* User.swift */,
+				5C14D15A2066E42200169DBE /* Token.swift */,
+				5C457B42206A85A800040C3E /* Login.swift */,
+				5C78CAD8206F9206007C753D /* TableViewCell */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -93,7 +141,10 @@
 		5C14D14A205D280600169DBE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5C78CAD2206E5CFE007C753D /* TaskView.swift */,
+				5C78CAD92072F475007C753D /* Task2View.swift */,
 				0F22E1B21E8407D1004B722A /* Main.storyboard */,
+				5C14D15C2066FB7B00169DBE /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +152,8 @@
 		5C14D14B205D280F00169DBE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5CF47B1C207746C0003E430B /* ProfilViewController.swift */,
+				5C78CAD4206E5D9C007C753D /* HomeViewController.swift */,
 				0F22E1B01E8407D1004B722A /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -109,6 +162,7 @@
 		5C14D14C205D282C00169DBE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5C457B3F206A710400040C3E /* Font */,
 				0F22E1AE1E8407D1004B722A /* AppDelegate.swift */,
 				0F22E1B51E8407D1004B722A /* Assets.xcassets */,
 				0F22E1B71E8407D1004B722A /* LaunchScreen.storyboard */,
@@ -130,8 +184,35 @@
 			isa = PBXGroup;
 			children = (
 				5C14D158205D52C400169DBE /* NotificationExtension.swift */,
+				5C457B3D2067B2B800040C3E /* ColorExtension.swift */,
+				5CF47B1E207771CA003E430B /* NSNotificationExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		5C457B3F206A710400040C3E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5C457B40206A712400040C3E /* FACEBOLF.OTF */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		5C457B57206B964000040C3E /* EpitechEisenhowerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C457B58206B964000040C3E /* EpitechEisenhowerTests.swift */,
+				5C457B5A206B964000040C3E /* Info.plist */,
+			);
+			path = EpitechEisenhowerTests;
+			sourceTree = "<group>";
+		};
+		5C78CAD8206F9206007C753D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5C78CAD6206F91B4007C753D /* HomeTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		77EF8F30CE2D8F6B084BC1AE /* Pods */ = {
@@ -146,7 +227,7 @@
 		FA6ED154A0D21502920BB109 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9EA6E1E7EA0ACD9BD56F8C47 /* libPods-EpitechEisenhower.a */,
+				8506B52574AD9FCB9F0C6A27 /* Pods_EpitechEisenhower.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,19 +255,43 @@
 			productReference = 0F22E1AB1E8407D1004B722A /* EpitechEisenhower.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5C457B55206B963F00040C3E /* EpitechEisenhowerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C457B5D206B964000040C3E /* Build configuration list for PBXNativeTarget "EpitechEisenhowerTests" */;
+			buildPhases = (
+				5C457B52206B963F00040C3E /* Sources */,
+				5C457B53206B963F00040C3E /* Frameworks */,
+				5C457B54206B963F00040C3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C457B5C206B964000040C3E /* PBXTargetDependency */,
+			);
+			name = EpitechEisenhowerTests;
+			productName = EpitechEisenhowerTests;
+			productReference = 5C457B56206B963F00040C3E /* EpitechEisenhowerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0F22E1A31E8407D1004B722A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0920;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
 				TargetAttributes = {
 					0F22E1AA1E8407D1004B722A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YVVZ65Y3UC;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+					};
+					5C457B55206B963F00040C3E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0F22E1AA1E8407D1004B722A;
 					};
 				};
 			};
@@ -204,6 +309,7 @@
 			projectRoot = "";
 			targets = (
 				0F22E1AA1E8407D1004B722A /* EpitechEisenhower */,
+				5C457B55206B963F00040C3E /* EpitechEisenhowerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,8 +320,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F22E1B91E8407D1004B722A /* LaunchScreen.storyboard in Resources */,
+				5C457B41206A712500040C3E /* FACEBOLF.OTF in Resources */,
 				0F22E1B61E8407D1004B722A /* Assets.xcassets in Resources */,
 				0F22E1B41E8407D1004B722A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C457B54206B963F00040C3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,9 +342,30 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EpitechEisenhower/Pods-EpitechEisenhower-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -261,9 +396,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EpitechEisenhower/Pods-EpitechEisenhower-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -277,17 +415,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF47B1D207746C0003E430B /* ProfilViewController.swift in Sources */,
 				0F22E1B11E8407D1004B722A /* ViewController.swift in Sources */,
 				5C14D154205D292000169DBE /* HTTPClient.swift in Sources */,
+				5CF47B1F207771CA003E430B /* NSNotificationExtension.swift in Sources */,
+				5C78CAD7206F91B4007C753D /* HomeTableViewCell.swift in Sources */,
+				5C78CADA2072F475007C753D /* Task2View.swift in Sources */,
 				5C14D156205D2AB200169DBE /* User.swift in Sources */,
+				5C78CAD3206E5CFE007C753D /* TaskView.swift in Sources */,
+				5C14D15D2066FB7B00169DBE /* LoginView.swift in Sources */,
 				5C14D14E205D286A00169DBE /* Task.swift in Sources */,
 				5C14D152205D28C400169DBE /* LIbraryAPI.swift in Sources */,
 				5C14D159205D52C400169DBE /* NotificationExtension.swift in Sources */,
 				0F22E1AF1E8407D1004B722A /* AppDelegate.swift in Sources */,
+				5C14D15B2066E42200169DBE /* Token.swift in Sources */,
+				5C457B43206A85A800040C3E /* Login.swift in Sources */,
+				5C78CAD5206E5D9C007C753D /* HomeViewController.swift in Sources */,
+				5C457B3E2067B2B800040C3E /* ColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C457B52206B963F00040C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C457B59206B964000040C3E /* EpitechEisenhowerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C457B5C206B964000040C3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F22E1AA1E8407D1004B722A /* EpitechEisenhower */;
+			targetProxy = 5C457B5B206B964000040C3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0F22E1B21E8407D1004B722A /* Main.storyboard */ = {
@@ -322,6 +486,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -329,6 +494,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -377,6 +543,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -384,6 +551,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -417,6 +585,7 @@
 			baseConfigurationReference = 93AF977C082B5FE4EB9C6F9D /* Pods-EpitechEisenhower.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YVVZ65Y3UC;
 				INFOPLIST_FILE = "$(SRCROOT)/EpitechEisenhower/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.EpitechEisenhower;
@@ -432,6 +601,7 @@
 			baseConfigurationReference = 44779B333A6CA749D22BC692 /* Pods-EpitechEisenhower.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YVVZ65Y3UC;
 				INFOPLIST_FILE = "$(SRCROOT)/EpitechEisenhower/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.EpitechEisenhower;
@@ -439,6 +609,48 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		5C457B5E206B964000040C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = EpitechEisenhowerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EpitechProject.EpitechEisenhowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EpitechEisenhower.app/EpitechEisenhower";
+			};
+			name = Debug;
+		};
+		5C457B5F206B964000040C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = EpitechEisenhowerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EpitechProject.EpitechEisenhowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EpitechEisenhower.app/EpitechEisenhower";
 			};
 			name = Release;
 		};
@@ -459,6 +671,15 @@
 			buildConfigurations = (
 				0F22E1BE1E8407D1004B722A /* Debug */,
 				0F22E1BF1E8407D1004B722A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C457B5D206B964000040C3E /* Build configuration list for PBXNativeTarget "EpitechEisenhowerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C457B5E206B964000040C3E /* Debug */,
+				5C457B5F206B964000040C3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

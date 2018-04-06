@@ -12,11 +12,14 @@ class Task : NSObject {
     var title = ""
     var state = false
     var notes = ""
-
+    var urgent = false
+    var important = false
+    var id = ""
+    
     override init() {
     }
     
-    init(title: String, state: Bool = false, notes: String? = nil) {
+    init(title: String, state: Bool = false, notes: String? = nil, urgent: Bool = false, important: Bool = false) {
         self.title = title
         self.state = state
         if let notes = notes {
