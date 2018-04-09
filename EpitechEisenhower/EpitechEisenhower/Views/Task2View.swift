@@ -13,6 +13,7 @@ class Task2View: UIView {
     @IBOutlet private var dateLabel: UILabel!
     @IBOutlet private var urgent: UIImageView!
     
+    public var task: Task?
     
     private var ENABLE_BUTTON: CGFloat = 1.0
     private var DISABLE_BUTTON: CGFloat = 0.33

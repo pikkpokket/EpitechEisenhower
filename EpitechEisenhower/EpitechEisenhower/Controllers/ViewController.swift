@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loading.isHidden = true
+        self.navigationController?.isNavigationBarHidden = true
 //        LibraryAPI.shared.logout()
         
         NotificationCenter.default.addObserver(self, selector: #selector(loginComplete(notification:)), name: .LoginUser, object: nil)
@@ -73,8 +74,10 @@ class ViewController: UIViewController {
             case .failed(let error):
 //                print("Une erreur est survenue : \(error)")
                 self.displayError(error: "Une erreur est survenue: \(error)")
+                self.loadingStop()
             case .cancelled:
                 print("L'utilisateur a annulé la connexion")
+                self.loadingStop()
             case .success(let grantedPermissions, let declinedPermissions, let token):
                 print("L'utilisateur est bien connecté avec les differents paramètre : grantedPermissions : \(grantedPermissions) , declinedPermissions : \(declinedPermissions) et le token : \(token)")
                 LibraryAPI.shared.loginWithFacebook(token: Token(accessToken: AccessToken.current!))
@@ -109,9 +112,9 @@ class ViewController: UIViewController {
             loadingStop()
             pushToHomeViewController()
         } else {
+            loadingStop()
             let error = notification.userInfo!["error"] as! Fault
             displayError(error: error.message)
-            loadingStop()
         }
     }
     

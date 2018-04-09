@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
+        LibraryAPI.shared.getTask()
     }
     
     override func viewDidLoad() {
@@ -41,8 +42,6 @@ class HomeViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         NotificationCenter.default.addObserver(self, selector: #selector(linkTasksToController(notification:)), name: .GetTask, object: nil)
         
-//        LibraryAPI.shared.login(user: User(email: "kevin.djedje@epitech.eu", password: "password"))
-        LibraryAPI.shared.getTask()
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,39 +62,7 @@ class HomeViewController: UIViewController {
             print("error : \(error.message)")
         }
     }
-    
-    private func getStyleTask2(task: Task) -> Task2View.Style {
-        if task.important {
-            if task.urgent {
-                return .importanteAndUrgente
-            } else {
-                return .importanteAndNotUrgente
-            }
-        } else {
-            if task.urgent {
-                return .NotImportanteAndUrgente
-            } else {
-                return .regular
-            }
-        }
-    }
-    
-    private func getStyleTask(task: Task) -> TaskView.Style {
-        if task.important {
-            if task.urgent {
-                return .importanteAndUrgente
-            } else {
-                return .importanteAndNotUrgente
-            }
-        } else {
-            if task.urgent {
-                return .NotImportanteAndUrgente
-            } else {
-                return .regular
-            }
-        }
-    }
-    
+        
     private func getInProgressTask(allTasks: [Task]) -> [Task] {
         var inProgressTasks: [Task] = []
         
@@ -107,18 +74,44 @@ class HomeViewController: UIViewController {
         return inProgressTasks
     }
     
-    @IBAction func profileButtonDidPressed() {
-//        let controller = storyboard?.instantiateViewController(withIdentifier: "Profil")
-//        self.navigationController!.pushViewController(controller!, animated: true)
-        
+    @IBAction func profileButtonDidPressed() {        
         let profilViewController: ProfilViewController = storyboard!.instantiateViewController(withIdentifier: "Profil") as! ProfilViewController
         navigationController?.pushViewController(profilViewController, animated: true)
 
         
     }
     
-    private func pushToProfilViewController() {
-        
+    @objc private func addButtonDidPressed() {
+        let createViewController: CreateTaskViewController = storyboard!.instantiateViewController(withIdentifier: "CreateTask") as! CreateTaskViewController
+        self.navigationController?.pushViewController(createViewController, animated: true)
+    }
+    
+    @objc private func pushTaskDetailView(sender: UITapGestureRecognizer) {
+        print("ViewTouched TAG : \(sender.view!.tag)")
+        let detailViewController: TaskDetailViewController = storyboard!.instantiateViewController(withIdentifier: "TaskDetail") as! TaskDetailViewController
+        if sender.view!.tag % 2 == 0 {
+            if let taskView: TaskView = sender.view! as? TaskView {
+                if taskView.task == nil {
+                    print("OUI MAGGLE")
+                }
+                detailViewController.task = taskView.task
+                self.navigationController?.pushViewController(detailViewController, animated: true)
+            }
+            if let taskView: Task2View = sender.view! as? Task2View {
+                if taskView.task == nil {
+                    print("OUI MAGGLE")
+                }
+                detailViewController.task = taskView.task
+                self.navigationController?.pushViewController(detailViewController, animated: true)
+            }
+        } else {
+            let taskView = sender.view! as? Task2View
+            if taskView?.task == nil {
+                print("OUI MAGGLE")
+            }
+            detailViewController.task = taskView?.task
+            self.navigationController?.pushViewController(detailViewController, animated: true)
+        }
     }
 }
 
@@ -141,37 +134,24 @@ extension HomeViewController: UITableViewDataSource {
         let cell: HomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: CellName.cell, for: indexPath) as! HomeTableViewCell
         let index = indexPath.row * 2
         if count >= 2 {
-            let firstTask = tasksInProgress[index]
-            let secondTask = tasksInProgress[index + 1]
+            cell.initController(storyBoard: self.storyboard!, navigationController: self.navigationController!, task1: tasksInProgress[index], task2: tasksInProgress[index + 1])
             
-            cell.firstTaskView.isHidden = false
-            cell.secondTaskView.isHidden = false
-            cell.addButton.isHidden = true
-            
-            
-            cell.firstTaskView.title = firstTask.title
-            cell.firstTaskView.style = getStyleTask(task: firstTask)
-            cell.secondTaskView.title = secondTask.title
-            cell.secondTaskView.style = getStyleTask2(task: secondTask)
-            
+            cell.firstTaskView.tag = index
+            cell.secondTaskView.tag = index + 1
+            cell.firstTaskView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(pushTaskDetailView(sender:))))
+            cell.secondTaskView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(pushTaskDetailView(sender:))))
             count -= 2
             return cell
         } else if count == 1 {
-            let secondTask = tasksInProgress[index]
-            
-            cell.secondTaskView.title = secondTask.title
-            cell.secondTaskView.style = getStyleTask2(task: secondTask)
-            cell.secondTaskView.isHidden = false
-            cell.firstTaskView.isHidden = true
-            cell.addButton.isHidden = false
-            
+            cell.initControllerWithOneTask(storyBoard: self.storyboard!, navigationController: self.navigationController!, task2: tasksInProgress[index])
+            cell.secondTaskView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(pushTaskDetailView(sender:))))
+            cell.addButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(addButtonDidPressed)))
+            cell.secondTaskView.tag = index
             count -= 1
             return cell
         } else if count == 0 {
-            cell.addButton.isHidden = false
-            cell.firstTaskView.isHidden = true
-            cell.secondTaskView.isHidden = true
-            
+            cell.initControllerWithOutTask(storyBoard: self.storyboard!, navigationController: self.navigationController!)
+            cell.addButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(addButtonDidPressed)))
             return cell
         }
         return cell

@@ -88,7 +88,11 @@ class HTTPClient {
     
     //    MARK: - Deconnexion
     
-    public func logout() {
+    public func logoutBlock() {
+        backendless.userService.logout()
+    }
+    
+    public func logoutAsync() {
         backendless.userService.logout({ (result) in
             print("Utilisateur déconnecté")
         }) { (fault) in
@@ -110,7 +114,7 @@ class HTTPClient {
         let dataStore = backendless.data.of(Task().ofClass())
         dataStore?.save(newTask, response: { (result) in
             print("La nouvelle tache \(newTask.title) a bien été ajoutée à votre liste")
-            NotificationCenter.default.post(name: .CreateTask, object: self, userInfo: [self.KEY_SUCCESS: true])
+            NotificationCenter.default.post(name: .CreateTask, object: self, userInfo: [self.KEY_SUCCESS: true, "newTask" : result])
         }, error: { (fault: Fault?) in
             print("Une erreur est apparue : \(String(describing: fault))")
             NotificationCenter.default.post(name: .CreateTask, object: self, userInfo: [self.KEY_SUCCESS: false, self.KEY_ERROR: fault!])
@@ -143,6 +147,25 @@ class HTTPClient {
         },
                                  error: { fault in
                                     NotificationCenter.default.post(name: .GetTask, object: self, userInfo: [self.KEY_SUCCESS: false, self.KEY_ERROR: fault!])
+        })
+    }
+    
+    public func removeTask(deletedTask: Task) {
+        let dataStore = backendless.data.of(Task.ofClass())
+        
+        dataStore!.remove(deletedTask, response: { (resultNumber) in
+            print("Success")
+        }) { (fault: Fault?) in
+            print("Error : \(fault!.message)")
+        }
+    }
+    
+    public func addRelationBetweenCurrentUserAndTask(task: Task) {
+        let dataStore = backendless.data.of(BackendlessUser.ofClass())
+        dataStore?.addRelation("userID", parentObjectId: String(backendless.userService.currentUser.objectId), childObjects: [task.objectId], response: { (resultNumber) in
+            print("Relation between User and Task is succeed")
+        }, error: { (fault: Fault?) in
+            print("Error with \(fault!.message)")
         })
     }
     

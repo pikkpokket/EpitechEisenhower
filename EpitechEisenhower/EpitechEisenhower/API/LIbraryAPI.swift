@@ -28,8 +28,11 @@ final class LibraryAPI {
     }
     
     //    MARK: - Déconnexion
-    public func logout() {
-        httpClient.logout()
+    public func logoutBlock() {
+        httpClient.logoutBlock()
+    }
+    public func logoutAsync() {
+        httpClient.logoutAsync()
     }
     
     //    MARK: - Fonctions liées à l'utilisateur
@@ -37,6 +40,7 @@ final class LibraryAPI {
         httpClient.updateUserInformation(user: user)
     }
     
+    //    MARK: - Fonctions liées aux taches
     public func addTask(newTask: Task) {
         httpClient.postTask(newTask: newTask)
     }
@@ -49,4 +53,11 @@ final class LibraryAPI {
         httpClient.getTask()
     }
     
+    public func removeTask(deletedTask: Task) {
+        httpClient.removeTask(deletedTask: deletedTask)
+    }
+    
+    public func setRelationBetweenCurrentUserToTask(task: Task) {
+        httpClient.addRelationBetweenCurrentUserAndTask(task: task)
+    }
 }

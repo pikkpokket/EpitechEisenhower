@@ -17,6 +17,8 @@ class TaskView: UIView {
     private var ENABLE_BUTTON: CGFloat = 1.0
     private var DISABLE_BUTTON: CGFloat = 0.33
     
+    public var task: Task?
+    
     public enum Style {
         case importanteAndUrgente, importanteAndNotUrgente, NotImportanteAndUrgente, regular
     }

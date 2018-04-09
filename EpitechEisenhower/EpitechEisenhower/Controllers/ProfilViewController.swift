@@ -51,6 +51,9 @@ class ProfilViewController: UIViewController {
     }
     
     @IBAction func logoutButtonDidPressed() {
+        LibraryAPI.shared.logoutBlock()
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login") as! ViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc private func updateUserCompleted(notification: NSNotification) {

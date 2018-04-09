@@ -29,6 +29,8 @@
 		5C78CADA2072F475007C753D /* Task2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78CAD92072F475007C753D /* Task2View.swift */; };
 		5CF47B1D207746C0003E430B /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF47B1C207746C0003E430B /* ProfilViewController.swift */; };
 		5CF47B1F207771CA003E430B /* NSNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF47B1E207771CA003E430B /* NSNotificationExtension.swift */; };
+		5CF47B21207A7744003E430B /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF47B20207A7744003E430B /* TaskDetailViewController.swift */; };
+		5CF47B23207ACE71003E430B /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF47B22207ACE71003E430B /* CreateTaskViewController.swift */; };
 		CDA2FBEF74305DA34DFF26DE /* Pods_EpitechEisenhower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8506B52574AD9FCB9F0C6A27 /* Pods_EpitechEisenhower.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		5C78CAD92072F475007C753D /* Task2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task2View.swift; sourceTree = "<group>"; };
 		5CF47B1C207746C0003E430B /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
 		5CF47B1E207771CA003E430B /* NSNotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationExtension.swift; sourceTree = "<group>"; };
+		5CF47B20207A7744003E430B /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		5CF47B22207ACE71003E430B /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		8506B52574AD9FCB9F0C6A27 /* Pods_EpitechEisenhower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpitechEisenhower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AF977C082B5FE4EB9C6F9D /* Pods-EpitechEisenhower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpitechEisenhower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpitechEisenhower/Pods-EpitechEisenhower.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +156,8 @@
 		5C14D14B205D280F00169DBE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5CF47B22207ACE71003E430B /* CreateTaskViewController.swift */,
+				5CF47B20207A7744003E430B /* TaskDetailViewController.swift */,
 				5CF47B1C207746C0003E430B /* ProfilViewController.swift */,
 				5C78CAD4206E5D9C007C753D /* HomeViewController.swift */,
 				0F22E1B01E8407D1004B722A /* ViewController.swift */,
@@ -415,6 +421,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF47B21207A7744003E430B /* TaskDetailViewController.swift in Sources */,
+				5CF47B23207ACE71003E430B /* CreateTaskViewController.swift in Sources */,
 				5CF47B1D207746C0003E430B /* ProfilViewController.swift in Sources */,
 				0F22E1B11E8407D1004B722A /* ViewController.swift in Sources */,
 				5C14D154205D292000169DBE /* HTTPClient.swift in Sources */,

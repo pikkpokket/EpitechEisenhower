@@ -11,6 +11,7 @@ extension Notification.Name {
     static let CreateTask = Notification.Name("PostTaskNotification")
     static let UpdateTask = Notification.Name("UpdateTaskNotification")
     static let GetTask = Notification.Name("GetTaskNotification")
+    static let RemoveTask = Notification.Name("RemoveTaskNotification")
     static let RegisterUser = Notification.Name("RegisterUserNotification")
     static let LoginUser = Notification.Name("LoginUserNotification")
     static let GoogleLogin = Notification.Name("GoogleLoginNotification")

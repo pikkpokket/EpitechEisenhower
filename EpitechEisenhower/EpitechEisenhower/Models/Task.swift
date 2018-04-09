@@ -15,16 +15,20 @@ class Task : NSObject {
     var urgent = false
     var important = false
     var id = ""
+    var dateTask = ""
+    var objectId: String?
     
     override init() {
     }
     
-    init(title: String, state: Bool = false, notes: String? = nil, urgent: Bool = false, important: Bool = false) {
+    init(title: String, state: Bool = false, notes: String? = nil, urgent: Bool, important: Bool) {
         self.title = title
         self.state = state
         if let notes = notes {
             self.notes = notes
         }
+        self.urgent = urgent
+        self.important = important
     }
     
     func completeTask(complete: Bool) {
